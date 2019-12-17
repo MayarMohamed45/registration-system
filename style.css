@@ -1,0 +1,68 @@
+b{
+	background-color:white;
+}
+h1{
+	text-align:center;
+	font-size:50px;
+	color:steelblue;
+}
+table{
+	width:320px;
+	color:steelblue;
+}
+input{
+	padding:4px;
+	font-size:inherit;
+}
+input[type="text"]{
+	display:block;
+	margin-bottom:25px;
+	width:100%;
+	border:2px solid steelblue;
+	
+}
+input[type="email"]{
+	display:block;
+	margin-bottom:25px;
+	width:100%;
+	border:2px solid steelblue;
+}
+input[type="password"]{
+	display:block;
+	margin-bottom:25px;
+	width:100%;
+	border:2px solid steelblue;
+}
+input[type="number"]{
+display:block;
+	margin-bottom:25px;
+	width:100%;
+	border:2px solid steelblue;
+}
+input[type="date"]{
+	display:block;
+	margin-bottom:25px;
+	width:100%;
+	border:2px solid steelblue;
+}
+input[type="radio"]{
+	margin:0 8px 25px 18px;
+}
+textarea{
+	display:block;
+	margin-bottom:25px;
+	width:100%;
+	border:2px solid steelblue;
+}
+input[type="submit"]{
+	padding:10px;
+	border:none;
+	background:steelblue;
+	color:white;
+}
+input[type="submit"]:focus{
+	border:solid steelblue;
+	background:white;
+	color:steelblue;
+
+
