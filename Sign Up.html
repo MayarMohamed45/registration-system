@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>Student Registration</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1> Student Registration</h1>
+<form onsubmit="return validation();">
+<table align="center" cellpadding="10">
+ <tr>
+ <td> First Name: </td>
+ <td> <input type="text" name="first name" id="name"> </td>
+ </tr>
+ <tr>
+ <td> Last Name: </td>
+ <td> <input type="text" name="Last name" id="name"> </td>
+ </tr>
+ <tr>
+ <td> Emaail: </td>
+ <td> <input type="email" name="Email" id="name"> </td>
+ </tr>
+ <tr>
+ <td> Password: </td>
+ <td> <input type="password" name="password" id="name"> </td>
+ </tr>
+ <tr>
+ <td> Re-Enter Password: </td>
+ <td> <input type="password" name="re-enter password" id="name"> </td>
+ </tr>
+ <tr>
+ <td> Mobile Number: </td>
+ <td> <input type="number" name="mobile number" id="name"> </td>
+ </tr>
+ <tr>
+ <td> Date of Birthday: </td>
+ <td> <input type="date" name="date of birthday" id="name"> </td>
+ </tr>
+ <tr>
+ <td> Gender:</td>
+ <td> 
+  <input type="radio" name="gender" value="male"> Male
+  <input type="radio" name="gender" value="female"> Female
+  </td>
+ </tr>
+ <tr>
+ <td>Adress:</td>
+ <td> <textarea rows="6" cols="25">
+ </textarea>
+ </td>
+ </tr>
+ <tr>
+ <td> City:</td>
+ <td> <input type="text" name="city" id="name"></td>
+ </tr>
+ <tr>
+ <td> Country:</td>
+ <td> <input type="text" name="country" id="name"></td>
+ </tr>
+ <tr>
+ <td> <input type="Submit" name="submit" id="save"></td>
+ </tr>
+</table>
+</form>
+<div id="result" style="color:red;"></div>
+<script type="text/javascript">
+function validation(){
+var First Name=document.getElementById('name').value;
+var last Name=document.getElementById('name').value;
+var Emaail=document.getElementById('name').value;
+var Password=document.getElementById('name').value;
+var Re-Enter Password=document.getElementById('name').value;
+if(First Name==''||Last Name==''||Emaail==''||Password==''||Re-Enter Password=='')
+{
+document.getElementById("result").innerHTML="All Field Required";
+return false;
+}
+else if(First Name.length<7){
+document.getElementById("result").innerHTML="First Name must be Atleast 7Characters";
+return false;
+}
+else if(Last Name.length<7){
+document.getElementById("result").innerHTML="Last Name must be Atleast 7Characters";
+return false;
+}
+else if(Password.length<9){
+document.getElementById("result").innerHTML="Password must be Atleast 9Characters";
+return false;
+}
+else {
+return true;
+}
+}
+</script>
+</body>
+</html>
